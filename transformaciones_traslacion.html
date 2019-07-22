@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rotacion</title>
+    <style>
+        body{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* height: 100vh; */
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            border: 1px solid red;
+            display: grid;
+            height: 100vh;
+            grid-gap: 1px;
+            grid-template-columns: repeat(6, 150px);
+            grid-template-rows: repeat(3, 150px);    
+            /* justify-items: center;
+            align-items: center; */
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .container:hover .item1{
+            transform: rotate(45deg);
+        }
+
+        .container:hover .item2{
+            transform: rotate(-45deg);
+        }
+
+        .container:hover .item3{
+            transform: rotateX(80deg);
+        }
+
+        .container:hover .item4{
+            transform: rotateY(80deg);
+        }
+
+        .container:hover .item5{
+            transform: rotateZ(45deg);
+        }
+
+        .container:hover .item6{
+            transform: rotate3d(1,1,1,45deg);
+        }
+
+        .container:hover .item7{
+            transform: rotate3d(1,1,1,85deg);
+        }
+        .container:hover .item8{
+            transform: rotate3d(0,1,1,85deg);
+        }
+        
+        .cuadrado{
+            /* width: 200px; */
+            /* height: 200px; */
+            background: #7dc900;
+            /* margin: 20px; */
+            transition: .3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado item1">
+           <b>Hola estoy aqui</b> 
+        </div>
+        <div class="cuadrado item2">
+           <b>Hola estoy aqui</b> 
+        </div>
+        <div class="cuadrado item3">
+           <b>Hola estoy aqui</b> 
+        </div>
+        <div class="cuadrado item4">
+           <b>Hola estoy aqui</b> 
+        </div>
+        <div class="cuadrado item5">
+           <b>Hola estoy aqui</b> 
+        </div>
+        <div class="cuadrado item6">
+           <b>Hola estoy aqui</b> 
+        </div>
+        <div class="cuadrado item7">
+           <b>Hola estoy aqui</b> 
+        </div>
+        <div class="cuadrado item8">
+           <b>Hola estoy aqui</b> 
+        </div>
+    </div>
+</body>
+</html>
